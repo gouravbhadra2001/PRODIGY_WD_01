@@ -1,0 +1,108 @@
+#registration {
+    border: none;
+
+    margin-block-start: 50rem;
+}
+
+#close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: inherit;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.step-container {
+    display: none;
+    width: 50vw;
+    position: relative;
+    margin: 0 auto;
+    background-color: #ffffff58;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1.5px 2px 5px rgba(140, 134, 134, 0.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.step-container h2 {
+    padding: 15px;
+}
+
+.step {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.step.active {
+    display: flex;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.button-container button {
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.button-container button#prev {
+    background-color: #cccccc41;
+    color: white;
+}
+
+.button-container button#next {
+    background-color: #cccccc41;
+    color: white;
+}
+
+.button-container button#submit {
+    padding-inline: 30px;
+    padding-block: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: x-large;
+    margin-inline: auto;
+    border-radius: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button-container button#submit:hover {
+    background-color: white;
+    cursor: pointer;
+    color: rgb(2, 2, 2);
+}
+
+
+@media screen and (max-width: 550px) {
+    #registration {
+        margin-top: 500px;
+
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .step-container {
+        width: inherit
+    }
+}

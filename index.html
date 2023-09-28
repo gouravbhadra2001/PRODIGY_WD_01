@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XYZ Institute Event Registration</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/100/event-accepted-tentatively.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/details.css">
+  <link rel="stylesheet" href="./css/agenda.css">
+  <link rel="stylesheet" href="./css/register.css">
+  <link rel="stylesheet" href="./css/contacts.css">
+
+
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <i>XYZ_Events</i>
+
+    <menu>
+      <a class="call-to-action cta_desktop" href="#registration">RSVP</a>
+      <div class="menu-item"><a href="#details" class="hover-color">Details</a></div>
+      <div class="menu-item"><a href="#agenda" class="hover-color">Agenda</a></div>
+      <div class="menu-item"><a href="#contacts" class="hover-color">Contact</a></div>
+
+
+    </menu>
+    <div class="hamburger-container">
+      <div class="icon hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </nav>
+
+  <div class="menu-mobile">
+    <div><a href="#details">Details</a></div>
+    <div><a href="#agenda">Agenda</a></div>
+    <div><a href="#contacts">Contact</a></div>
+    <a class="call-to-action cta_mobile" href="#registration">RSVP</a>
+  </div>
+
+
+
+
+  <main>
+    <section id="registration">
+      <div class="step-container">
+        <button id="close" onclick="closeForm()">X</button>
+        <div class="step" id="step1">
+          <h2>Step 1: Name</h2>
+
+          <input type="text" id="fname" required placeholder="First Name">
+          <input type="text" id="lname" required placeholder="Last Name">
+          <div class="button-container">
+            <button id="next" onclick="nextStep()">Next</button>
+          </div>
+        </div>
+        <div class="step" id="step2">
+          <h2>Step 2: Personal Contact Details</h2>
+
+          <input type="email" id="email" required placeholder="Email">
+          <input type="tel" id="phone" required placeholder="Phone No.">
+          <div class="button-container">
+            <button id="prev" onclick="prevStep()">
+              Prev
+            </button>
+            <button id="next" onclick="nextStep()">Next</button>
+          </div>
+        </div>
+
+        <div class="step" id="step3">
+          <h2>Step 3: College Details</h2>
+          <input type="text" id="college_roll" required placeholder="College Roll">
+          <input type="text" id="univ_roll" required placeholder="University Roll">
+          <input type="text" id="course" required placeholder="Course">
+          <input type="text" id="stream" required placeholder="Stream">
+          <input type="email" id="coll_email" required placeholder="Institutional Email">
+          <div class="button-container">
+            <button id="prev" onclick="prevStep()">Prev</button>
+            <button id="next" onclick="nextStep()">Next</button>
+          </div>
+        </div>
+
+        <div class="step" id="step4">
+          <h2>Step 4: Address (Optional)</h2>
+          <input type="text" id="street" placeholder="Street Address">
+          <input type="text" id="city" placeholder="City">
+          <input type="text" id="state" placeholder="State/Province">
+          <input type="text" id="zip" placeholder="Zip/Postal Code">
+          <input type="text" id="country" placeholder="Country">
+          <div class="button-container">
+            <button id="prev" onclick="prevStep()">
+              Prev
+            </button>
+            <button id="next" onclick="nextStep()">Next</button>
+          </div>
+        </div>
+
+        <div class="step" id="step5">
+          <h2>Step 5: Interests</h2>
+          <input type="text" id="interest" placeholder="Why are you interested?">
+          <div class="button-container">
+            <button id="prev" onclick="prevStep()">
+              Prev
+            </button>
+            <button id="submit" onclick="submitForm()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+
+      <div id="details_description">
+
+        <div class="slider_wrapper">
+          <div class="slider horizontal-scroll">
+
+            <div id="title">
+              <h1>
+                Event Name
+              </h1>
+              <div>
+                <h3>
+                  AI vs Human in Future - A Predictive Analysis
+                </h3>
+                <p>
+                  Bridging the Gap Between Silicon Minds and Human Futures
+                </p>
+              </div>
+
+            </div>
+
+
+            <div id="datetimevenue">
+              <h1>
+                Join the event where and when
+              </h1>
+
+              <div>
+                <venue>
+                  <h4>
+                    📍 Venue:
+                  </h4>
+                  <p>5, Hello World Rd, Compiler Bazar</p>
+                </venue>
+                <date>
+                  <h4>
+                    📆 Date:
+                  </h4>
+                  <p>Sep 15, 2023</p>
+                </date>
+
+                <time>
+                  <h4>
+                    🕑 Time:
+                  </h4>
+                  <p>2:00 pm</p>
+                </time>
+              </div>
+
+            </div>
+
+
+
+            <div id="about">
+              <h1>
+                About This Event
+              </h1>
+              <div>
+                <p>
+                  Join us for a captivating exploration into the realm of artificial intelligence and its intricate
+                  relationship with the
+                  human experience. "AI vs Human - A Predictive Analysis" is a thought-provoking event that delves into
+                  the evolving
+                  interplay between cutting-edge technology and our collective future. Through insightful discussions
+                  and expert
+                  perspectives, we aim to uncover the profound impact of AI on society, while delving into the uncharted
+                  territories of
+                  future predictions. Engage with luminaries from both technological and humanistic domains as we
+                  decipher the intricate
+                  dance between innovation and human values, forging a path towards harmonious coexistence in an
+                  increasingly digital
+                  world.
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="slider_nav">
+            <a href="#title" class="active"></a>
+            <a href="#datetimevenue"></a>
+            <a href="#about"></a>
+          </div>
+        </div>
+
+
+
+      </div>
+      </div id="details_image">
+      <img src="./robot-18819.png" alt="" srcset="">
+      <div>
+
+      </div>
+    </section>
+    <section id="agenda">
+
+      <div id="agenda_description">
+        <h1>Agenda</h1>
+
+        <agendaSlide class="horizontal-scroll">
+          <div class="topic" id="topic1">
+
+            <div class="topic_description">
+              <topic>
+                <h2> Welcome and Introduction</h2>
+              </topic>
+
+              <time>
+                <h4>Time Slot</h4>
+                <p>2:00pm — 2:15pm</p>
+              </time>
+              <speaker>
+                <h4>Speaker</h4>
+                <p>Dr. Rohit Yadav</p>
+              </speaker>
+              <note>
+                <p>Kick off the event with a warm welcome and an overview of what attendees can expect throughout the
+                  day.</p>
+              </note>
+            </div>
+
+          </div>
+
+          <div class="topic" id="topic2">
+
+            <div class="topic_description">
+              <topic>
+                <h2>AI's Impact On Society</h2>
+              </topic>
+
+              <time>
+                <h4>Time Slot</h4>
+                <p>2:15pm - 3:00pm</p>
+              </time>
+              <speaker>
+                <h4>Speaker</h4>
+                <p>Dr. Thomas Pearson</p>
+              </speaker>
+              <note>
+                <p>Gain insights into the profound ways AI is shaping our society and its implications for the future.
+                </p>
+              </note>
+            </div>
+
+          </div>
+          <div class="topic" id="topic3">
+
+            <div class="topic_description">
+              <topic>
+                <h2>Panel Discussion: Human Adaptation to Technological Changes</h2>
+              </topic>
+
+              <time>
+                <h4>Time Slot</h4>
+                <p>3:15pm - 4:15pm</p>
+              </time>
+              <speaker>
+                <h4>Speakers</h4>
+                <p>Dr. Raveena Shetty , Dr. Sarah Brown, Dr. Shovan Chowdhury</p>
+              </speaker>
+              <note>
+                <p>Engage in a lively discussion about how humans are adapting to rapid technological advancements,
+                  featuring expert perspectives.</p>
+              </note>
+            </div>
+
+          </div>
+
+
+          <div class="topic" id="topic4">
+
+            <div class="topic_description">
+              <topic>
+                <h2>Breakout Session 1: Predicting Technological Trends</h2>
+              </topic>
+
+              <time>
+                <h4>Time Slot</h4>
+                <p>4:30pm - 5:15pm</p>
+              </time>
+              <speaker>
+                <h4>Speaker</h4>
+                <p>Dr. Jeevan Somnath</p>
+              </speaker>
+              <note>
+                <p>Explore the exciting world of technological trends and predictions, and learn how these insights can
+                  shape business and innovation.</p>
+              </note>
+            </div>
+
+          </div>
+
+          <div class="topic" id="topic5">
+
+            <div class="topic_description">
+              <topic>
+                <h2>Breakout Session 2: Ethical Considerations in AI</h2>
+              </topic>
+
+              <time>
+                <h4>Time Slot</h4>
+                <p>5:30pm - 6:15pm</p>
+              </time>
+              <speaker>
+                <h4>Speaker</h4>
+                <p>Dr. Suchitra Adhikari</p>
+              </speaker>
+              <note>
+                <p>Delve into the ethical challenges and responsibilities that arise with the rise of AI technologies
+                  and their integration into daily life.</p>
+              </note>
+            </div>
+
+          </div>
+
+
+          <div class="topic" id="topic6">
+
+            <div class="topic_description">
+              <topic>
+                <h2>Q&A and Networking</h2>
+              </topic>
+
+              <time>
+                <h4>Time Slot</h4>
+                <p>6:30pm - 7:00pm</p>
+              </time>
+
+              <note>
+                <p>Have your burning questions answered by our experts in a dynamic Q&A session, followed by networking
+                  opportunities to connect with fellow attendees.</p>
+              </note>
+            </div>
+
+          </div>
+        </agendaSlide>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="./JS/logic.js"></script>
+    <script src="./JS/details.js"></script>
+    <script src="./JS/nav.js"></script>
+    <script src="./JS/agenda.js"></script>
+    <script src="./JS/register.js"></script>
+    <script src="./JS/contacts.js"></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            if (targetElement.classList.contains('horizontal-scroll')) {
+
+              const horizontalContent = targetElement.querySelector('.horizontal-content');
+              if (horizontalContent) {
+                horizontalContent.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'nearest',
+                  inline: 'start'
+
+                });
+              }
+            } else {
+              window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth',
+              });
+            }
+          }
+        });
+      });
+    </script>
+    <section id="contacts">
+      <div class="contact-box">
+        <div class="contact-heading">Organizer:</div>
+        <div class="contact-name">Sohini Dey</div>
+        <div class="contact-detail">
+          Email: organizer@example.com
+        </div>
+        <div class="contact-detail">
+          WhatsApp: 98541236210
+        </div>
+        <div class="contact-detail">
+          Phone: 965214512017
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <div class="contact-heading">Coordinator:</div>
+        <div class="contact-name">Saswata Roy</div>
+        <div class="contact-detail">
+          Email: coordinator@example.com
+        </div>
+        <div class="contact-detail">
+          WhatsApp: 963210412367
+        </div>
+        <div class="contact-detail">
+          Phone: 93124552107
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+</body>
+
+</html>
