@@ -20,6 +20,7 @@ input {
     width: inherit;
     border: 1px solid #ccc;
     border-radius: 5px;
+    color: black;
 }
 
 .step-container {
